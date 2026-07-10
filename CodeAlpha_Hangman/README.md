@@ -71,6 +71,7 @@ README.md              # This file
 - **Change the drawing:** edit the ASCII art strings in `HANGMAN_STAGES`.
 
 
+
 This project was built as part of the **CodeAlpha** Internship Python Programming task series (see filename prefix `CodeAlpha_`).
 
 Build by - Gaurav Kumar Ojha.
