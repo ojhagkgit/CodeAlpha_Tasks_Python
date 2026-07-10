@@ -26,10 +26,8 @@ Each task has its own detailed README in this repository — see [`CodeAlpha_Han
 
 ```
 .
-├── CodeAlpha_Hangman.py
-├── CodeAlpha_Hangman_README.md
-├── CodeAlpha_Chatbot.py
-├── CodeAlpha_Chatbot_README.md
+├── CodeAlpha_Chatbot        # folder containing a .py file and README.md
+├── CodeAlpha_Hangman        # folder containing a .py file and README.md
 ├── README.md
 └── gitignore
 ```
