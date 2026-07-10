@@ -1,52 +1,102 @@
-# Hangman Game
+# 🎮 Hangman Game
 
-A simple text-based Hangman game built in Python, where the player guesses a
-secret word one letter at a time before running out of incorrect guesses.
+A simple text-based **Hangman** game built in **Python** where the player guesses a hidden word one letter at a time before running out of attempts.
 
-## Features
+This project demonstrates the use of fundamental Python programming concepts such as loops, conditional statements, functions, lists, string manipulation, randomization, and input validation.
 
-- 5 predefined words to choose from (no external file or API required)
-- Random word selection each round, avoiding an immediate repeat of the
-  previous round's word
-- 6 incorrect guesses allowed before the game ends
-- ASCII-art hangman drawing that updates with each wrong guess
-- Input validation (rejects empty input, multiple characters, non-letters,
-  and repeated guesses)
-- Tracks and displays previously guessed letters
-- "Play again" loop so you can keep playing without restarting the script
+---
 
-## Requirements
+## 📌 Features
 
-- Python 3.6 or later (uses f-strings)
-- No external libraries — only the built-in `random` module
+- 🎲 Randomly selects a word from a predefined list.
+- 🔤 Guess one letter at a time.
+- ❤️ Allows up to **6 incorrect guesses**.
+- 🎨 Displays Hangman ASCII art after each wrong guess.
+- ✅ Prevents duplicate letter guesses.
+- ⚠️ Validates user input.
+  - Only accepts a single alphabetic character.
+- 📝 Displays
+  - Current word progress
+  - Previously guessed letters
+  - Remaining incorrect guesses
+- 🔄 Supports playing multiple rounds.
+- 🎯 Ensures the same word is **not selected in two consecutive games**.
 
-## How to Run
+---
 
-```bash
-python3 CodeAlpha_Hangman.py
+## 🛠 Technologies Used
+
+- Python 3
+- random module
+
+---
+
+## 💻 Sample Gameplay
+
+```text
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        Welcome to Hangman Game!
+
+Guess the word. You have 6 incorrect guesses allowed.
+You have to guess one letter at a time.
+Only lowercase letters are used.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+       ------
+       |    |
+       |
+       |
+       |
+       |
+    --------
+
+Word: _ _ _ _ _ _
+Incorrect guesses left: 6
+
+Guess a letter: y
+Good guess!
+y is in the word.
+
+
+       ------
+       |    |
+       |
+       |
+       |
+       |
+    --------
+ 
+Word: _ _ y _ _ _
+Incorrect guesses left: 6
+Guessed letters: y
+
+Guess a letter: z
+Sorry, z is not in the word.
+
+
+       ------
+       |    |
+       |    O
+       |
+       |
+       |
+    --------
+
+Word: _ _ y _ _ _
+Incorrect guesses left: 5
+Guessed letters: y, z
+
+...
+
+Congratulations! You guessed the word: rhythm
+
 ```
 
-## How to Play
+---
 
-1. When the game starts, a random word is chosen from the word list.
-2. The word is displayed as a row of blanks (`_`), one per letter.
-3. Enter one letter at a time when prompted.
-   - If the letter is in the word, it's revealed in its correct position(s).
-   - If the letter is not in the word, you lose one guess and the hangman
-     drawing progresses.
-4. The game ends when either:
-   - You guess every letter in the word (**you win**), or
-   - You reach 6 incorrect guesses (**you lose**, and the word is revealed).
-5. After each round, you'll be asked if you want to play again (`y`/`n`).
-
-## Project Structure
-
-```
-CodeAlpha_Hangman.py   # Main game script
-README.md              # This file
-```
-
-## Code Overview
+## 💻 Code Overview
 
 | Function | Purpose |
 |---|---|
@@ -56,22 +106,44 @@ README.md              # This file
 | `play_hangman()` | Runs a single round of the game |
 | `main()` | Handles the play-again loop |
 
-## Key Concepts Used
+---
+
+## 📚 Key Concepts Used
 
 - `random` module (`random.choice`) for word selection
 - `while` loops, including a `while...else` construct to detect a loss
 - `if` / `elif` / `else` conditionals for game logic and input validation
 - String methods (`.lower()`, `.strip()`, `.isalpha()`, `.join()`)
-- Lists (word list, guessed-letters list, hangman stage list)
+- Lists (`WORDS` list, `guessed_letters` list, `HANGMAN_STAGES` list)
 
-## Customization
+---
+
+## 📝 Customization
 
 - **Add more words:** edit the `WORDS` list.
 - **Change difficulty:** adjust `MAX_INCORRECT_GUESSES`.
 - **Change the drawing:** edit the ASCII art strings in `HANGMAN_STAGES`.
 
+---
 
+## 🚀 Future Improvements
 
-This project was built as part of the **CodeAlpha** Internship Python Programming task series (see filename prefix `CodeAlpha_`).
+- Load words from an external dictionary file.
+- Add multiple difficulty levels.
+- Categorize words (Animals, Countries, Technology, etc.).
+- Track player score across multiple games.
+- Add hints for difficult words.
+- Display guessed and remaining alphabets.
+- Create a graphical version using Tkinter or Pygame.
 
-Build by - Gaurav Kumar Ojha.
+---
+
+## 🎯 Project Objective
+
+This project was developed as part of the **CodeAlpha Python Programming Internship** to demonstrate a text-based Hangman game using core Python programming concepts and problem-solving techniques.
+
+---
+
+## 👨‍💻 Author
+
+**Gaurav Kumar Ojha**
