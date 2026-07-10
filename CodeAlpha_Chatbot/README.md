@@ -64,16 +64,15 @@ This project demonstrates the use of basic Python programming concepts including
 ============================================================
             Simple Rule-Based Chatbot
 
-Type 'help' to see what I can do.
-Type 'bye', 'exit', or 'quit' to end the chat.
+  Type 'help' to see what I can do.
+  Type 'bye', 'exit', or 'quit' to end the chat.
 ============================================================
 
 You: Hello!
 Bot: Hi there! How can I help you today?
 
 You: What can you do?
-Bot: I can respond to greetings, questions about myself,
-time, day and date, and a few other simple phrases.
+Bot: I can respond to greetings, questions about myself, time, day and date, and a few other simple phrases. Try saying 'hello' or 'bye'!
 
 You: What's the time?
 Bot: The current time is 08:45 PM.
@@ -83,6 +82,7 @@ Bot: You're welcome!
 
 You: Bye
 Bot: Goodbye! Have a great day!
+
 ```
 
 ---
