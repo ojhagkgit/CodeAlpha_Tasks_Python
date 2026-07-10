@@ -1,0 +1,74 @@
+# =====================================================
+# .gitignore — CodeAlpha Python & C++ Internship Projects
+# =====================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- C++ ----------
+# Compiled object files
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Compiled dynamic/shared/static libraries
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+
+# Executables (no file extension on Linux/Mac, .exe on Windows)
+*.exe
+*.out
+*.app
+
+# CMake build artifacts
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ---------- Editor / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Logs / temp ----------
+*.log
+*.tmp
+*.bak
+
+# ---------- Project-specific generated data ----------
+# Uncomment if you don't want runtime-generated files tracked in git
+# users.txt
