@@ -56,7 +56,7 @@ def get_response(user_input):
     elif any(word in words for word in ("made", "built", "created")) and "you" in words and "who" in words:
         return "I was built as a simple Python project to demonstrate rule-based chatbot conversation logic."
 
-    elif (feel and "not" in words) or (any(word in words for word in ("sad", "bad")) and "not" not in words):
+    elif (feel and ("not" in words or "don't" in words)) or (any(word in words for word in ("sad", "bad")) and "not" not in words):
         return "I'm sorry to hear that. I hope things get better soon."
     
     elif feel or any(word in text for word in ("going well", "not so bad", "not bad")):
