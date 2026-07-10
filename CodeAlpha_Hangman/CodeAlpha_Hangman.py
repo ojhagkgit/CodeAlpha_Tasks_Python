@@ -188,4 +188,5 @@ def main():
     print("\nThanks for playing Hangman! Goodbye.\n");
 
 
-main();
+if __name__ == "__main__":
+    main();
