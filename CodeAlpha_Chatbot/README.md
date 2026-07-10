@@ -58,17 +58,6 @@ This project demonstrates the use of basic Python programming concepts including
 
 ---
 
-## 📂 Project Structure
-
-```
-CodeAlpha_Chatbot/
-│
-├── CodeAlpha_Chatbot.py
-└── README.md
-```
-
----
-
 ## 💻 Sample Conversation
 
 ```
